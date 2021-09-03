@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <meta charset="utf-8" />
+        <title>Create New Journal</title>
+    </head>
+    <body>
+        <%- include("partials/navigation.ejs") %>
+        <h2>Create a New Journal</h2>
+        <form class="new-journal-form" id="new-journal-form" method="POST" action="/create-journal">
+            <label for="name">Journal Name</label>
+            <input type="text" name="name" value="<%= input.name %>" required />
+            <br />
+            <label for="author">Author</label>
+            <input type="text" name="author" value="<%= input.author %>" required />
+            <br />
+            <input class="button" type="submit" value="Submit" />
+        </form>
+    </body>
+</html>

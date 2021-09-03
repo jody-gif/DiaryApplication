@@ -1,0 +1,3 @@
+C:\Users\JoanO\source\repos\DiaryApplication\obj\Debug\DiaryApplication.njsproj.AssemblyReference.cache
+C:\Users\JoanO\source\repos\DiaryApplication\obj\Debug\DiaryApplication.njsproj.CoreCompileInputs.cache
+C:\Users\JoanO\source\repos\DiaryApplication\bin\Microsoft.NodejsTools.WebRole.dll

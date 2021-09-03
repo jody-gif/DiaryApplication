@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <meta charset="utf-8" />
+        <title>Create New Journal</title>
+    </head>
+    <body>
+        <%- include("partials/navigation.ejs") %>
+        <h2>New Journal Created!</h2>
+        <p>Thank you, <%= journal.author %>. Your journal "<%= journal.name %>" has been created!</p>
+        <br />
+        <button class="button" onclick="window.location.href='/write-journal/<%= journalID %>'">Write to This Journal</button>
+        <button class="button" onclick="window.location.href='/create-journal'">Create Another Journal</button>
+    </body>
+</html>

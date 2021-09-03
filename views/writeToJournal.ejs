@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <meta charset="utf-8" />
+        <title>Write To Journal</title>
+    </head>
+    <body>
+        <%- include("partials/navigation.ejs") %>
+        <h2><%= journal.JournalName %></h2>
+        <p>Please write your entry message to this journal and let us know who authored it</p>
+        <br />
+        <form id="new-entry-form" class="new-entry-form" method="POST" action="/create-entry/<%= journal.JournalID %>">
+            <label for="message">Entry Message</label>
+            <br />
+            <textarea class="entry-form-message" type="text" name="message" rows="8" required><%= input.message %></textarea>
+            <br />
+            <label for="author">Author</label>
+            <input type="text" name="author" value="<%= input.author %>" required />
+            <br />
+            <input class="button" type="submit" value="Submit" />
+        </form>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+* {
+    font-family: "Consolas";
+    padding-inline: 10px;
+    color: white;
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+input {
+    background-color: #00002B;
+    border-color: white;
+    font-size: large;
+    margin-block: 10px;
+}
+
+nav {
+    background-color: indigo;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items:center;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.button {
+    background-color: navy;
+    font-size: large;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: fit-content;
+    align-content: center;
+    text-wrap: normal;
+}
+
+.journal-list-item {
+    background-color: navy;
+    border-color: white;
+    width: 400px;
+    border: double;
+}
+
+.entry-list-item {
+    background-color: #120030;
+    border-color: white;
+    width: 90%;
+    border: double;
+}
+
+.entry-list-item-footer {
+    width: 70%;
+    align-self: end;
+    justify-self: end;
+}
+
+.new-journal-form {
+    font-size: large;
+    padding-block: 10px;
+    width: 300px;
+}
+
+.new_entry-form {
+    font-size: large;
+    padding-block: 10px;
+    width: 80%;
+    height: 60%;
+}
+
+.entry-form-message {
+    background-color: #00002B;
+    border-color: white;
+    font-size: large;
+    margin-block: 10px;
+    width: 90%;
+    height: 60%;
+}
+
+.list-section {
+    width: 100%;
+    height: 380px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.nav-title {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <meta charset="utf-8" />
+        <title>Write To Journal</title>
+    </head>
+    <body>
+        <%- include("partials/navigation.ejs") %>
+        <h2>New Journal Entry Written!</h2>
+        <p>Thank you, <%= entry.author %>. Your entry to journal "<%= journal.JournalName %>" has been written!</p>
+        <br />
+        <button class="button" onclick="window.location.href='/write-journal/<%= journal.JournalID %>'">Write Another Entry</button>
+        <button class="button" onclick="window.location.href='/get-journal/<%= journal.JournalID %>'">Read This Journal</button>
+    </body>
+</html>

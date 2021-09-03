@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <meta charset="utf-8" />
+        <title>Journals</title>
+    </head>
+    <body>
+        <%- include("partials/navigation.ejs") %>
+        <h2><%= journal.JournalName %></h2>
+        <br />
+        <div class="list-section">
+            <% for (var i = 0; i < entries.length; i++) { %>
+                <div class="entry-list-item">
+                    <p><%= entries[i].EntryMessage %></p>
+                    <div class="entry-list-item-footer">
+                        <p>Written By: <i><%= entries[i].EntryAuthor %></i></p>
+                        <p><%= entryDates[i] %></p>
+                    </div>
+                </div>
+                <br />
+            <% } %>
+        </div>
+        <br />
+        <button class="button" onclick="window.location.href='/write-journal/<%= journal.JournalID %>'">Write To This Journal</button>
+    </body>
+</html>

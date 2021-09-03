@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <meta charset="utf-8" />
+        <title>Journals</title>
+    </head>
+    <body>
+        <%- include("partials/navigation.ejs") %>
+        <h2>List of Journals</h2>
+        <p>Select which journal you would like to write to</p>
+        <br />
+        <% for (var i = 0; i < journals.length; i++) { %>
+        <div class="journal-list-item" onclick="window.location.href='/write-journal/<%= journals[i].JournalID %>'">
+            <h2><%= journals[i].JournalName %></h2>
+            <p><i><%= journals[i].JournalAuthor %></i></p>
+        </div>
+        <br />
+        <% } %>
+    </body>
+</html>
